@@ -15,6 +15,10 @@ steps:
   displayName: 'yarn global add react-static'
 
 - script: |
+    yarn add --dev @babel/preset-flow
+  displayName: 'yarn add --dev @babel/preset-flow'
+
+- script: |
     yarn deploy
   displayName: 'yarn deploy'
 
