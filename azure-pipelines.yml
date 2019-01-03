@@ -8,4 +8,12 @@ trigger:
 
 pool:
   vmImage: 'Ubuntu-16.04'
+ 
+steps:
+- task: Maven@3
+  displayName: 'Maven pom.xml'
+  inputs:
+    options: '-DskipITs --settings ./maven/settings.xml'
+
+    publishJUnitResults: false
 
