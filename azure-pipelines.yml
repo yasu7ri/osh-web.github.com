@@ -10,10 +10,11 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
 - script: |
     yarn global add react-static
+  displayName: 'yarn global add react-static'
+
+- script: |
     yarn deploy
-  displayName: 'Run a multi-line script'
+  displayName: 'yarn deploy'
+
