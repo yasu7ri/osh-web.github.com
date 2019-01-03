@@ -14,5 +14,6 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
+    yarn global add react-static
     yarn deploy
   displayName: 'Run a multi-line script'
